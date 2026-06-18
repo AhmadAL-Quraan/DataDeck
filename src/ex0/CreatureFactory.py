@@ -1,10 +1,10 @@
 from abc import ABC, abstractmethod
 
-from .creature import creature
-from .torragon import _torragon
-from .aquabub import _aquabub
-from .pyrodon import _pyrodon
-from .flameling import _flameling
+from Creature import creature
+from Torragon import _torragon
+from Aquabub import _aquabub
+from Pyrodon import _pyrodon
+from Flameling import _flameling
 
 
 class creatureFactory(ABC):

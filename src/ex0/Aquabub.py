@@ -1,4 +1,4 @@
-from .creature import creature
+from Creature import creature
 
 
 class _aquabub(creature):

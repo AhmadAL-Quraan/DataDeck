@@ -1,4 +1,4 @@
-from . import CreatureFactory
+import CreatureFactory
 
 
 def reciveFunc(factoryObject: CreatureFactory.creatureFactory):
