@@ -1,7 +1,7 @@
-import CreatureFactory
+import ex0
 
 
-def reciveFunc(factoryObject: CreatureFactory.creatureFactory):
+def reciveFunc(factoryObject: ex0.CreatureFactory) -> None:
     print("Testing factory")
     # Base flame
     base = factoryObject.create_base()
@@ -14,9 +14,9 @@ def reciveFunc(factoryObject: CreatureFactory.creatureFactory):
 
 
 def battle(
-    flameFactor: CreatureFactory.creatureFactory,
-    aquaFactor: CreatureFactory.creatureFactory,
-):
+    flameFactor: ex0.CreatureFactory,
+    aquaFactor: ex0.CreatureFactory,
+) -> None:
 
     print("Testing battle")
     fighter1 = flameFactor.create_base()
@@ -28,10 +28,10 @@ def battle(
 
 
 if __name__ == "__main__":
-    flame_family = CreatureFactory.flameFactory()
+    flame_family = ex0.FlameFactory()
     reciveFunc(flame_family)
     print()
-    aqua_family = CreatureFactory.aquaFactory()
+    aqua_family = ex0.AquaFactory()
     reciveFunc(aqua_family)
     print()
     battle(flame_family, aqua_family)

@@ -1,8 +1,8 @@
-from Creature import creature
+from .Creature import Creature
 
 
-class _aquabub(creature):
-    def __init__(self):
+class _Aquabub(Creature):
+    def __init__(self) -> None:
         super().__init__("Aquabub", "Water")
 
     def attack(self) -> str:

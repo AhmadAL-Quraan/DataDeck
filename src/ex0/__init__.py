@@ -1,5 +1,11 @@
-from Creature import creature
-from CreatureFactory import flameFactory
-from CreatureFactory import aquaFactory
+from .FlameFactory import FlameFactory
+from .AquaFactory import AquaFactory
+from .CreatureFactory import CreatureFactory
+from .Creature import Creature
 
-__all__ = ["aquaFactory", "flameFactory"]
+__all__: list[str] = [
+    "FlameFactory",
+    "AquaFactory",
+    "CreatureFactory",
+    "Creature",
+]

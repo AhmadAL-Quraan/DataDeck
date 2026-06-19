@@ -1,8 +1,8 @@
-from Creature import creature
+from .Creature import Creature
 
 
-class _pyrodon(creature):
-    def __init__(self):
+class _Pyrodon(Creature):
+    def __init__(self) -> None:
         super().__init__("Pyrodon", "Fire/Flying")
 
     def attack(self) -> str:

@@ -1,8 +1,8 @@
-from Creature import creature
+from .Creature import Creature
 
 
-class _flameling(creature):
-    def __init__(self):
+class _Flameling(Creature):
+    def __init__(self) -> None:
         super().__init__("Flameling", "Fire")
 
     def attack(self) -> str:

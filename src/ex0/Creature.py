@@ -1,8 +1,8 @@
 from abc import ABC, abstractmethod
 
 
-class creature(ABC):
-    def __init__(self, name: str, type: str):
+class Creature(ABC):
+    def __init__(self, name: str, type: str) -> None:
         self.name = name
         self.type = type
 
