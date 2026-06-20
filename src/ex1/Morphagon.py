@@ -2,7 +2,7 @@ from ex0.Creature import Creature
 from .TransformCapability import TransformCapability
 
 
-class Morphagon(TransformCapability, Creature):
+class _Morphagon(TransformCapability, Creature):
     def __init__(self) -> None:
         Creature.__init__(self, "Morphagon", "Normal/Dragon")
         self.transformed = False

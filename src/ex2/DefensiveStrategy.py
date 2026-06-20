@@ -12,8 +12,8 @@ class DefensiveStrategy(BattleStrategy):
     def act(self, creature: Creature):
         if not self.is_valid(creature):
             raise TypeError(
-                f"Invalid {creature.name} for this defensive strategy"
+                f"Battle Error: Invalid {creature.name} for this defensive strategy"
             )
 
-        creature.attack()
-        cast(HealCapability, creature).heal("itself")
+        print(creature.attack())
+        print(cast(HealCapability, creature).heal("itself"))

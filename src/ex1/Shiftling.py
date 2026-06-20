@@ -2,7 +2,7 @@ from .TransformCapability import TransformCapability
 from ex0.Creature import Creature
 
 
-class Shiftling(TransformCapability, Creature):
+class _Shiftling(TransformCapability, Creature):
     def __init__(self) -> None:
         Creature.__init__(self, "Shiftling", "Normal")
         self.transformed = False
