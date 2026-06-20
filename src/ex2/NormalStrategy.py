@@ -1,8 +1,6 @@
 from .BattleStrategy import BattleStrategy
 from ex0.Creature import Creature
 
-from ex0.Creature import Creature
-
 
 class NormalStrategy(BattleStrategy):
     def act(self, creature: Creature) -> None:

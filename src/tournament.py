@@ -1,10 +1,6 @@
 import ex0
-from ex0 import CreatureFactory
 import ex1
 import ex2
-from ex2 import NormalStrategy
-from ex2 import DefensiveStrategy
-from ex2 import AggressiveStrategy
 
 
 def battle(
@@ -16,10 +12,9 @@ def battle(
         if not opponenets[i][1].is_valid(opponenets[i][0].create_base()):
             error = True
 
-    if error == False:
-        print(
-            f"Tournament {battle_number} {'(basic)' if len(opponenets) == 2 else '(multiple)'}"
-        )
+    if not error:
+        print(f"Tournament {battle_number}\
+{'(basic)' if len(opponenets) == 2 else '(multiple)'}")
     else:
         print(f"Tournament {battle_number} {'(error)'}")
 
@@ -57,9 +52,9 @@ if __name__ == "__main__":
     # Flameling
     flameling_factory = ex0.FlameFactory()
     # Battle strategy
-    strategy_norm = NormalStrategy()
-    strategy_def = DefensiveStrategy()
-    strategy_agger = AggressiveStrategy()
+    strategy_norm = ex2.NormalStrategy()
+    strategy_def = ex2.DefensiveStrategy()
+    strategy_agger = ex2.AggressiveStrategy()
     # Torn 0
     opponenets = [
         (flameling_factory, strategy_norm),
